@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+  discord:
+    image: django_app
+    container_name: django_app_container
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      - greed_net
+
+networks:
+  greed_net:
+    name: greed_net
+    external: true
