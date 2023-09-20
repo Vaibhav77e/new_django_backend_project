@@ -5,5 +5,5 @@ from rest_framework.response import Response
 
 @api_view(['GET'])
 def apiOverview(request):
-    data_to_send = {"message":"Sucessfully et Up"}
+    data_to_send = {"message":"Sucessfully set Up"}
     return Response(data_to_send)
